@@ -86,7 +86,7 @@
             $("#lastheart").val(formatDate(data.data.lastheart));
             $("#lastpay").val(formatDate(data.data.lastpay));
 
-            var img = window.location.host+"/"+data.data.key;
+            var img = window.location.protocol+"//"+window.location.host+"/"+data.data.key;
 
             $("#input").val(img);
             $("#pzqrcode").attr("src","/enQrcode?url="+img);
